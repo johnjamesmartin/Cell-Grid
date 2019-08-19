@@ -2,7 +2,7 @@
  ************************************************************/
 import { gridConfig } from '../config';
 
-/* :
+/* Grid object to pass to constructor:
  ************************************************************/
 const grid = {
   // DOM element we will append grid to:

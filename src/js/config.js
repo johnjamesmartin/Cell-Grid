@@ -1,4 +1,5 @@
-/* :
+/* Conveniently config the grid you wish to create by changing
+   the following properties:
  ************************************************************/
 const gridConfig = {
   size: 12, // this number is squared to make up number of cells
