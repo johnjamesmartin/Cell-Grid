@@ -1,0 +1,23 @@
+{
+  "name": "cell-grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "npm run webpack",
+    "build": "npm run compress-html && npm run compile-css && npm run start",
+    "webpack": "webpack -d --watch",
+    "compile-css": "sass src/scss/style.scss dist/css/style.css --style compressed",
+    "compress-html": "htmlmin -o dist/index.html src/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {
+    "htmlmin": "0.0.7",
+    "sass": "^1.22.10",
+    "webpack": "^4.39.2"
+  }
+}

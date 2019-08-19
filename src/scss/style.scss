@@ -1,0 +1,35 @@
+@import 'mixins';
+@import 'colours';
+
+body {
+  @include center();
+  background-color: $col-secondary;
+  height: 100vh;
+}
+
+.div-container {
+  background-color: $col-lightish;
+  padding: 0;
+}
+
+.cell {
+  @include center();
+  @include noselect();
+  background-color: $col-primary;
+  color: $col-darkest;
+  float: left;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.2s;
+}
+
+.cell:hover {
+  background-color: $col-accent;
+  cursor: pointer;
+}
+
+.cell:active {
+  background-color: lighten($col-accent, 20%);
+  cursor: pointer;
+}
